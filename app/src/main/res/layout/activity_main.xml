@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/selectFilesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Files" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fileRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/percentageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter similarity threshold percentage"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/findSimilaritiesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Similarities"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/similaritiesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results will be displayed here"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+</android.widget.ScrollView>
